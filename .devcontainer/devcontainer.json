@@ -1,0 +1,16 @@
+{
+    "name": "Funicular Music Sandbox",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "app",
+    "forwardPorts": [3000,5432],
+    "postCreateCommand": "yarn",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "prisma.prisma",
+				"bradlc.vscode-tailwindcss",
+				"esbenp.prettier-vscode"
+            ]
+        }
+    }
+}
